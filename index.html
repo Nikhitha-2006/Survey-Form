@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: rgb(238, 97, 149);
+        }
+        form{
+           text-align: center;
+           align-content: center;
+           
+           
+        }
+        table,tr,td{
+         text-align: center;
+         align-content: center;
+        }
+        fieldset{
+          width:fit-content;
+          margin-left:33vw;
+          background-color: rgb(248, 240, 255);
+        }
+    
+
+    </style>
+</head>
+<body style="background-color: peachpuff;">
+    <h1>Health Survey</h1>
+    <form action="response submited.html">
+      <fieldset>
+        <legend>Survey</legend>
+        <lable for="name">Name:</lable><br>
+        <input type="text" id="name"><br>
+        <label for="age">What is your age?</label><br><input type="text" id="age"><br>
+        <label for="height">What is your height?</label><br><input type="text" id="height"><br>
+        <label for="weight">What is your weight?</label><br><input type="text" id="weight"><br>
+        <p>what is your gender?<br>
+            <input type="radio" id="gender">
+             <lable for="gender">Male</lable><br>
+            <input type="radio" id="gender">
+            <lable for="gender">Female</lable><br>
+        </p>
+    <p>Do you regularly practice the following excerises</p>
+<div style="display: flex;flex-direction: column; align-items: center;margin-left: 5px;>
+    <table>
+        <tr><td><input type="checkbox" id="l1" name="l1"></td><td><label for="l1" >Walking</label></td>
+        <tr><td><input type="checkbox" id="l2" name="l2"></td><td><label for="l2" style="margin-left: 5px;">Running</label></td>
+        <tr><td><input type="checkbox" id="l3" name="l3"></td><td><label for="l3" style="margin-left: 5px;">Swimming</label></td>
+        <tr><td><input type="checkbox" id="l4" name="l4"></td><td><label for="l4" style="margin-left: 5px;">Biking</label></td>
+        <tr><td> <input type="checkbox" id="l5" name="l5"></td><td>  <label for="l5" style="margin-left: 5px;">Other</label></td>
+        <tr><td><input type="checkbox" id="l6" name="l6"></td><td><label for="l6" style="margin-left: 5px;">I don't excercise</label></td>
+    </table>
+</div>
+      <p>If you walk for exercise,how long does it take you to walk one mile?<br>
+        <input type="text">
+      </p>
+      <p>If you run for exercise,how long does it take you run one mile?<br>
+        <input type="text">
+      </p>
+      <p>How many hours a week do you usually exercise?<br>
+        <input type="text">
+      </p>
+      <p>How many hours a day do you usually exercise?<br>
+        <input type="text">
+      </p>
+      <p class="button">
+     <input type="submit" value="submit">
+     </p>
+      </fieldset>
+    </form>
+</body>
+</html>
